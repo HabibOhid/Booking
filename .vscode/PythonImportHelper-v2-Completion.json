@@ -1,0 +1,1032 @@
+[
+    {
+        "label": "pymongo",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "detail": "pymongo",
+        "documentation": {
+            "value": "\n```python\nimport pymongo\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "*",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {
+            "value": "\n```python\nimport tkinter\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {
+            "value": "\n```python\nimport tkinter\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {
+            "value": "\n```python\nimport tkinter\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "create_booking",
+        "importPath": "backend",
+        "description": "backend",
+        "isExtraImport": true,
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nimport backend\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "create_user",
+        "importPath": "backend",
+        "description": "backend",
+        "isExtraImport": true,
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nimport backend\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "isAvailable",
+        "importPath": "backend",
+        "description": "backend",
+        "isExtraImport": true,
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nimport backend\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "get_bookings",
+        "importPath": "backend",
+        "description": "backend",
+        "isExtraImport": true,
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nimport backend\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "update_room",
+        "importPath": "backend",
+        "description": "backend",
+        "isExtraImport": true,
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nimport backend\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "search_booking_by_user",
+        "importPath": "backend",
+        "description": "backend",
+        "isExtraImport": true,
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nimport backend\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "User",
+        "importPath": "user",
+        "description": "user",
+        "isExtraImport": true,
+        "detail": "user",
+        "documentation": {
+            "value": "\n```python\nimport user\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Room",
+        "importPath": "rooms",
+        "description": "rooms",
+        "isExtraImport": true,
+        "detail": "rooms",
+        "documentation": {
+            "value": "\n```python\nimport rooms\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Booking",
+        "importPath": "booking",
+        "description": "booking",
+        "isExtraImport": true,
+        "detail": "booking",
+        "documentation": {
+            "value": "\n```python\nimport booking\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {
+            "value": "\n```python\nimport datetime\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {
+            "value": "\n```python\nimport json\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "dumps",
+        "importPath": "bson.json_util",
+        "description": "bson.json_util",
+        "isExtraImport": true,
+        "detail": "bson.json_util",
+        "documentation": {
+            "value": "\n```python\nimport bson.json_util\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "ObjectId",
+        "importPath": "bson.objectid",
+        "description": "bson.objectid",
+        "isExtraImport": true,
+        "detail": "bson.objectid",
+        "documentation": {
+            "value": "\n```python\nimport bson.objectid\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "isAvailable",
+        "kind": 2,
+        "importPath": "backend",
+        "description": "backend",
+        "peekOfCode": "def isAvailable(name):\n    roomAvailable = rooms.find_one({\"name\": name})\n    if(roomAvailable and roomAvailable[\"quantity\"] > 0):\n        return roomAvailable\n    return None\ndef create_booking(booking):\n    return bookings.insert_one(booking)\ndef update_room(foundRoom):\n    rooms.find_and_modify({\"_id\": foundRoom[\"_id\"]}, {\n        \"$inc\": {\"quantity\": -1}})",
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nfrom backend import isAvailable\n```\n\n```python\n\n\n```\n\n```python\ndef isAvailable(name):\n    roomAvailable = rooms.find_one({\"name\": name})\n    if(roomAvailable and roomAvailable[\"quantity\"] > 0):\n        return roomAvailable\n    return None\ndef create_booking(booking):\n    return bookings.insert_one(booking)\ndef update_room(foundRoom):\n    rooms.find_and_modify({\"_id\": foundRoom[\"_id\"]}, {\n        \"$inc\": {\"quantity\": -1}})\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "create_booking",
+        "kind": 2,
+        "importPath": "backend",
+        "description": "backend",
+        "peekOfCode": "def create_booking(booking):\n    return bookings.insert_one(booking)\ndef update_room(foundRoom):\n    rooms.find_and_modify({\"_id\": foundRoom[\"_id\"]}, {\n        \"$inc\": {\"quantity\": -1}})\ndef create_user(newUser):\n    users.insert_one(newUser)\ndef get_bookings():\n    return bookings.find()\ndef search_booking_by_user(user):",
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nfrom backend import create_booking\n```\n\n```python\n\n\n```\n\n```python\ndef create_booking(booking):\n    return bookings.insert_one(booking)\ndef update_room(foundRoom):\n    rooms.find_and_modify({\"_id\": foundRoom[\"_id\"]}, {\n        \"$inc\": {\"quantity\": -1}})\ndef create_user(newUser):\n    users.insert_one(newUser)\ndef get_bookings():\n    return bookings.find()\ndef search_booking_by_user(user):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "update_room",
+        "kind": 2,
+        "importPath": "backend",
+        "description": "backend",
+        "peekOfCode": "def update_room(foundRoom):\n    rooms.find_and_modify({\"_id\": foundRoom[\"_id\"]}, {\n        \"$inc\": {\"quantity\": -1}})\ndef create_user(newUser):\n    users.insert_one(newUser)\ndef get_bookings():\n    return bookings.find()\ndef search_booking_by_user(user):\n    return bookings.find_one(user)",
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nfrom backend import update_room\n```\n\n```python\n\n\n```\n\n```python\ndef update_room(foundRoom):\n    rooms.find_and_modify({\"_id\": foundRoom[\"_id\"]}, {\n        \"$inc\": {\"quantity\": -1}})\ndef create_user(newUser):\n    users.insert_one(newUser)\ndef get_bookings():\n    return bookings.find()\ndef search_booking_by_user(user):\n    return bookings.find_one(user)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "create_user",
+        "kind": 2,
+        "importPath": "backend",
+        "description": "backend",
+        "peekOfCode": "def create_user(newUser):\n    users.insert_one(newUser)\ndef get_bookings():\n    return bookings.find()\ndef search_booking_by_user(user):\n    return bookings.find_one(user)",
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nfrom backend import create_user\n```\n\n```python\n\n\n```\n\n```python\ndef create_user(newUser):\n    users.insert_one(newUser)\ndef get_bookings():\n    return bookings.find()\ndef search_booking_by_user(user):\n    return bookings.find_one(user)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "get_bookings",
+        "kind": 2,
+        "importPath": "backend",
+        "description": "backend",
+        "peekOfCode": "def get_bookings():\n    return bookings.find()\ndef search_booking_by_user(user):\n    return bookings.find_one(user)",
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nfrom backend import get_bookings\n```\n\n```python\n\n\n```\n\n```python\ndef get_bookings():\n    return bookings.find()\ndef search_booking_by_user(user):\n    return bookings.find_one(user)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "search_booking_by_user",
+        "kind": 2,
+        "importPath": "backend",
+        "description": "backend",
+        "peekOfCode": "def search_booking_by_user(user):\n    return bookings.find_one(user)",
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nfrom backend import search_booking_by_user\n```\n\n```python\n\n\n```\n\n```python\ndef search_booking_by_user(user):\n    return bookings.find_one(user)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "myclient",
+        "kind": 5,
+        "importPath": "backend",
+        "description": "backend",
+        "peekOfCode": "myclient = pymongo.MongoClient(\"mongodb://localhost/\")\nmydb = myclient[\"roomservices\"]\n# Uncomment and run these lines of code to create the mongoDb database Collections\n# Create room collection\n# mydb.create_collection(\"rooms\")\n# Create user collection\n# mydb.create_collection(\"users\")\n# Create bookings collection\n# mydb.create_collection(\"bookings\")\n# SEED",
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nfrom backend import myclient\n```\n\n```python\n\n\n```\n\n```python\nmyclient = pymongo.MongoClient(\"mongodb://localhost/\")\nmydb = myclient[\"roomservices\"]\n# Uncomment and run these lines of code to create the mongoDb database Collections\n# Create room collection\n# mydb.create_collection(\"rooms\")\n# Create user collection\n# mydb.create_collection(\"users\")\n# Create bookings collection\n# mydb.create_collection(\"bookings\")\n# SEED\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "mydb",
+        "kind": 5,
+        "importPath": "backend",
+        "description": "backend",
+        "peekOfCode": "mydb = myclient[\"roomservices\"]\n# Uncomment and run these lines of code to create the mongoDb database Collections\n# Create room collection\n# mydb.create_collection(\"rooms\")\n# Create user collection\n# mydb.create_collection(\"users\")\n# Create bookings collection\n# mydb.create_collection(\"bookings\")\n# SEED\n# roomDb1 = {\"name\": room1.name, \"roomType\": room1.roomType,",
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nfrom backend import mydb\n```\n\n```python\n\n\n```\n\n```python\nmydb = myclient[\"roomservices\"]\n# Uncomment and run these lines of code to create the mongoDb database Collections\n# Create room collection\n# mydb.create_collection(\"rooms\")\n# Create user collection\n# mydb.create_collection(\"users\")\n# Create bookings collection\n# mydb.create_collection(\"bookings\")\n# SEED\n# roomDb1 = {\"name\": room1.name, \"roomType\": room1.roomType,\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "rooms",
+        "kind": 5,
+        "importPath": "backend",
+        "description": "backend",
+        "peekOfCode": "rooms = mydb.get_collection(\"rooms\")\nusers = mydb.get_collection(\"users\")\nbookings = mydb.get_collection(\"bookings\")\ndef isAvailable(name):\n    roomAvailable = rooms.find_one({\"name\": name})\n    if(roomAvailable and roomAvailable[\"quantity\"] > 0):\n        return roomAvailable\n    return None\ndef create_booking(booking):\n    return bookings.insert_one(booking)",
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nfrom backend import rooms\n```\n\n```python\n\n\n```\n\n```python\nrooms = mydb.get_collection(\"rooms\")\nusers = mydb.get_collection(\"users\")\nbookings = mydb.get_collection(\"bookings\")\ndef isAvailable(name):\n    roomAvailable = rooms.find_one({\"name\": name})\n    if(roomAvailable and roomAvailable[\"quantity\"] > 0):\n        return roomAvailable\n    return None\ndef create_booking(booking):\n    return bookings.insert_one(booking)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "users",
+        "kind": 5,
+        "importPath": "backend",
+        "description": "backend",
+        "peekOfCode": "users = mydb.get_collection(\"users\")\nbookings = mydb.get_collection(\"bookings\")\ndef isAvailable(name):\n    roomAvailable = rooms.find_one({\"name\": name})\n    if(roomAvailable and roomAvailable[\"quantity\"] > 0):\n        return roomAvailable\n    return None\ndef create_booking(booking):\n    return bookings.insert_one(booking)\ndef update_room(foundRoom):",
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nfrom backend import users\n```\n\n```python\n\n\n```\n\n```python\nusers = mydb.get_collection(\"users\")\nbookings = mydb.get_collection(\"bookings\")\ndef isAvailable(name):\n    roomAvailable = rooms.find_one({\"name\": name})\n    if(roomAvailable and roomAvailable[\"quantity\"] > 0):\n        return roomAvailable\n    return None\ndef create_booking(booking):\n    return bookings.insert_one(booking)\ndef update_room(foundRoom):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "bookings",
+        "kind": 5,
+        "importPath": "backend",
+        "description": "backend",
+        "peekOfCode": "bookings = mydb.get_collection(\"bookings\")\ndef isAvailable(name):\n    roomAvailable = rooms.find_one({\"name\": name})\n    if(roomAvailable and roomAvailable[\"quantity\"] > 0):\n        return roomAvailable\n    return None\ndef create_booking(booking):\n    return bookings.insert_one(booking)\ndef update_room(foundRoom):\n    rooms.find_and_modify({\"_id\": foundRoom[\"_id\"]}, {",
+        "detail": "backend",
+        "documentation": {
+            "value": "\n```python\nfrom backend import bookings\n```\n\n```python\n\n\n```\n\n```python\nbookings = mydb.get_collection(\"bookings\")\ndef isAvailable(name):\n    roomAvailable = rooms.find_one({\"name\": name})\n    if(roomAvailable and roomAvailable[\"quantity\"] > 0):\n        return roomAvailable\n    return None\ndef create_booking(booking):\n    return bookings.insert_one(booking)\ndef update_room(foundRoom):\n    rooms.find_and_modify({\"_id\": foundRoom[\"_id\"]}, {\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Booking",
+        "kind": 6,
+        "importPath": "booking",
+        "description": "booking",
+        "peekOfCode": "class Booking:\n    def __init__(self, fromDate, toDate, roomBooked, userInfo):\n        self.fromDate = fromDate\n        self.toDate = toDate\n        self.roomBooked = roomBooked\n        self.userInfo = userInfo",
+        "detail": "booking",
+        "documentation": {
+            "value": "\n```python\nfrom booking import Booking\n```\n\n```python\n\n\n```\n\n```python\nclass Booking:\n    def __init__(self, fromDate, toDate, roomBooked, userInfo):\n        self.fromDate = fromDate\n        self.toDate = toDate\n        self.roomBooked = roomBooked\n        self.userInfo = userInfo\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "quite",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def quite():\n    root.destroy()\ndef clear_entries():\n    name_entry.delete(0, END)\n    passport_entry.delete(0, END)\n    country_entry.delete(0, END)\n    fromDate_entry.delete(0, END)\n    toDate_entry.delete(0, END)\ndef book_now():\n    accomodationType = variable.get()",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import quite\n```\n\n```python\n\n\n```\n\n```python\ndef quite():\n    root.destroy()\ndef clear_entries():\n    name_entry.delete(0, END)\n    passport_entry.delete(0, END)\n    country_entry.delete(0, END)\n    fromDate_entry.delete(0, END)\n    toDate_entry.delete(0, END)\ndef book_now():\n    accomodationType = variable.get()\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "clear_entries",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def clear_entries():\n    name_entry.delete(0, END)\n    passport_entry.delete(0, END)\n    country_entry.delete(0, END)\n    fromDate_entry.delete(0, END)\n    toDate_entry.delete(0, END)\ndef book_now():\n    accomodationType = variable.get()\n    userName = name_entry.get()\n    userpassport = passport_entry.get()",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import clear_entries\n```\n\n```python\n\n\n```\n\n```python\ndef clear_entries():\n    name_entry.delete(0, END)\n    passport_entry.delete(0, END)\n    country_entry.delete(0, END)\n    fromDate_entry.delete(0, END)\n    toDate_entry.delete(0, END)\ndef book_now():\n    accomodationType = variable.get()\n    userName = name_entry.get()\n    userpassport = passport_entry.get()\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "book_now",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def book_now():\n    accomodationType = variable.get()\n    userName = name_entry.get()\n    userpassport = passport_entry.get()\n    userCountry = country_entry.get()\n    userGender = user_g.get()\n    fromDate = fromDate_entry.get()\n    toDate = toDate_entry.get()\n    foundRoom = isAvailable(accomodationType)\n    # print(foundRoom)",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import book_now\n```\n\n```python\n\n\n```\n\n```python\ndef book_now():\n    accomodationType = variable.get()\n    userName = name_entry.get()\n    userpassport = passport_entry.get()\n    userCountry = country_entry.get()\n    userGender = user_g.get()\n    fromDate = fromDate_entry.get()\n    toDate = toDate_entry.get()\n    foundRoom = isAvailable(accomodationType)\n    # print(foundRoom)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "search_entry",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def search_entry():\n    currentData = displaydata.get(ACTIVE)\n    booking_found = search_booking_by_user(currentData)\n    print(booking_found)\n    print(\"SEARCH clicked\")\ndef view_all_entries():\n    booking_list = get_bookings()\n    for item in booking_list:\n        bookingInfo = \"Room booked: {} - from {} to {} User: {} \".format(item[\"roomBooked\"][\"name\"],\n                                                                         item[\"fromDate\"], item[\"toDate\"], item[\"userInfo\"][\"name\"])",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import search_entry\n```\n\n```python\n\n\n```\n\n```python\ndef search_entry():\n    currentData = displaydata.get(ACTIVE)\n    booking_found = search_booking_by_user(currentData)\n    print(booking_found)\n    print(\"SEARCH clicked\")\ndef view_all_entries():\n    booking_list = get_bookings()\n    for item in booking_list:\n        bookingInfo = \"Room booked: {} - from {} to {} User: {} \".format(item[\"roomBooked\"][\"name\"],\n                                                                         item[\"fromDate\"], item[\"toDate\"], item[\"userInfo\"][\"name\"])\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "view_all_entries",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def view_all_entries():\n    booking_list = get_bookings()\n    for item in booking_list:\n        bookingInfo = \"Room booked: {} - from {} to {} User: {} \".format(item[\"roomBooked\"][\"name\"],\n                                                                         item[\"fromDate\"], item[\"toDate\"], item[\"userInfo\"][\"name\"])\n        displaydata.insert(END, bookingInfo)\n    print(\"VIEW ALL ENTRIES clicked\")\ndef update_data():\n    print(\"UPDATE clicked\")\ndef view_entry():",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import view_all_entries\n```\n\n```python\n\n\n```\n\n```python\ndef view_all_entries():\n    booking_list = get_bookings()\n    for item in booking_list:\n        bookingInfo = \"Room booked: {} - from {} to {} User: {} \".format(item[\"roomBooked\"][\"name\"],\n                                                                         item[\"fromDate\"], item[\"toDate\"], item[\"userInfo\"][\"name\"])\n        displaydata.insert(END, bookingInfo)\n    print(\"VIEW ALL ENTRIES clicked\")\ndef update_data():\n    print(\"UPDATE clicked\")\ndef view_entry():\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "update_data",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def update_data():\n    print(\"UPDATE clicked\")\ndef view_entry():\n    print(\"VIEW\")\ndef gender_selected():\n    filteredOPTIONS = OPTIONS.copy()\n    print(\"GENDER SELECTED\")\n    user_gender = gender_entry.get()\n    if(user_gender == 1):\n        filteredOPTIONS.remove(\"Female Dorm\")",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import update_data\n```\n\n```python\n\n\n```\n\n```python\ndef update_data():\n    print(\"UPDATE clicked\")\ndef view_entry():\n    print(\"VIEW\")\ndef gender_selected():\n    filteredOPTIONS = OPTIONS.copy()\n    print(\"GENDER SELECTED\")\n    user_gender = gender_entry.get()\n    if(user_gender == 1):\n        filteredOPTIONS.remove(\"Female Dorm\")\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "view_entry",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def view_entry():\n    print(\"VIEW\")\ndef gender_selected():\n    filteredOPTIONS = OPTIONS.copy()\n    print(\"GENDER SELECTED\")\n    user_gender = gender_entry.get()\n    if(user_gender == 1):\n        filteredOPTIONS.remove(\"Female Dorm\")\n        user_g.set(\"Male\")\n    else:",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import view_entry\n```\n\n```python\n\n\n```\n\n```python\ndef view_entry():\n    print(\"VIEW\")\ndef gender_selected():\n    filteredOPTIONS = OPTIONS.copy()\n    print(\"GENDER SELECTED\")\n    user_gender = gender_entry.get()\n    if(user_gender == 1):\n        filteredOPTIONS.remove(\"Female Dorm\")\n        user_g.set(\"Male\")\n    else:\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "gender_selected",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def gender_selected():\n    filteredOPTIONS = OPTIONS.copy()\n    print(\"GENDER SELECTED\")\n    user_gender = gender_entry.get()\n    if(user_gender == 1):\n        filteredOPTIONS.remove(\"Female Dorm\")\n        user_g.set(\"Male\")\n    else:\n        filteredOPTIONS.remove(\"Male Dorm\")\n        user_g.set(\"Female\")",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import gender_selected\n```\n\n```python\n\n\n```\n\n```python\ndef gender_selected():\n    filteredOPTIONS = OPTIONS.copy()\n    print(\"GENDER SELECTED\")\n    user_gender = gender_entry.get()\n    if(user_gender == 1):\n        filteredOPTIONS.remove(\"Female Dorm\")\n        user_g.set(\"Male\")\n    else:\n        filteredOPTIONS.remove(\"Male Dorm\")\n        user_g.set(\"Female\")\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "root = Tk()\nroot.title(\"BOOKINGS\")\n# FUNCTIONS\ndef quite():\n    root.destroy()\ndef clear_entries():\n    name_entry.delete(0, END)\n    passport_entry.delete(0, END)\n    country_entry.delete(0, END)\n    fromDate_entry.delete(0, END)",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import root\n```\n\n```python\n\n\n```\n\n```python\nroot = Tk()\nroot.title(\"BOOKINGS\")\n# FUNCTIONS\ndef quite():\n    root.destroy()\ndef clear_entries():\n    name_entry.delete(0, END)\n    passport_entry.delete(0, END)\n    country_entry.delete(0, END)\n    fromDate_entry.delete(0, END)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "name = Label(root, text=\"Name\")\nname.grid(row=0, column=0)\ncountry = Label(root, text=\"Country\")\npassport = Label(root, text=\"Passport Number\")\nfromDate = Label(root, text=\"From >>format: year, month, day\")\ntoDate = Label(root, text=\"To >>format: year, month, day\")\ngender = Label(root, text=\"Gender\")\nacco = Label(root, text=\"Accomodation Type\")\n# creating text area\nbooking_list = []",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import name\n```\n\n```python\n\n\n```\n\n```python\nname = Label(root, text=\"Name\")\nname.grid(row=0, column=0)\ncountry = Label(root, text=\"Country\")\npassport = Label(root, text=\"Passport Number\")\nfromDate = Label(root, text=\"From >>format: year, month, day\")\ntoDate = Label(root, text=\"To >>format: year, month, day\")\ngender = Label(root, text=\"Gender\")\nacco = Label(root, text=\"Accomodation Type\")\n# creating text area\nbooking_list = []\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "country",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "country = Label(root, text=\"Country\")\npassport = Label(root, text=\"Passport Number\")\nfromDate = Label(root, text=\"From >>format: year, month, day\")\ntoDate = Label(root, text=\"To >>format: year, month, day\")\ngender = Label(root, text=\"Gender\")\nacco = Label(root, text=\"Accomodation Type\")\n# creating text area\nbooking_list = []\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import country\n```\n\n```python\n\n\n```\n\n```python\ncountry = Label(root, text=\"Country\")\npassport = Label(root, text=\"Passport Number\")\nfromDate = Label(root, text=\"From >>format: year, month, day\")\ntoDate = Label(root, text=\"To >>format: year, month, day\")\ngender = Label(root, text=\"Gender\")\nacco = Label(root, text=\"Accomodation Type\")\n# creating text area\nbooking_list = []\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "passport",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "passport = Label(root, text=\"Passport Number\")\nfromDate = Label(root, text=\"From >>format: year, month, day\")\ntoDate = Label(root, text=\"To >>format: year, month, day\")\ngender = Label(root, text=\"Gender\")\nacco = Label(root, text=\"Accomodation Type\")\n# creating text area\nbooking_list = []\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n# Creating entry",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import passport\n```\n\n```python\n\n\n```\n\n```python\npassport = Label(root, text=\"Passport Number\")\nfromDate = Label(root, text=\"From >>format: year, month, day\")\ntoDate = Label(root, text=\"To >>format: year, month, day\")\ngender = Label(root, text=\"Gender\")\nacco = Label(root, text=\"Accomodation Type\")\n# creating text area\nbooking_list = []\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n# Creating entry\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "fromDate",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "fromDate = Label(root, text=\"From >>format: year, month, day\")\ntoDate = Label(root, text=\"To >>format: year, month, day\")\ngender = Label(root, text=\"Gender\")\nacco = Label(root, text=\"Accomodation Type\")\n# creating text area\nbooking_list = []\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n# Creating entry\nname_entry = Entry(root, width=50,)",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import fromDate\n```\n\n```python\n\n\n```\n\n```python\nfromDate = Label(root, text=\"From >>format: year, month, day\")\ntoDate = Label(root, text=\"To >>format: year, month, day\")\ngender = Label(root, text=\"Gender\")\nacco = Label(root, text=\"Accomodation Type\")\n# creating text area\nbooking_list = []\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n# Creating entry\nname_entry = Entry(root, width=50,)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "toDate",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "toDate = Label(root, text=\"To >>format: year, month, day\")\ngender = Label(root, text=\"Gender\")\nacco = Label(root, text=\"Accomodation Type\")\n# creating text area\nbooking_list = []\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n# Creating entry\nname_entry = Entry(root, width=50,)\npassport_entry = Entry(root, width=50, )",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import toDate\n```\n\n```python\n\n\n```\n\n```python\ntoDate = Label(root, text=\"To >>format: year, month, day\")\ngender = Label(root, text=\"Gender\")\nacco = Label(root, text=\"Accomodation Type\")\n# creating text area\nbooking_list = []\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n# Creating entry\nname_entry = Entry(root, width=50,)\npassport_entry = Entry(root, width=50, )\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "gender",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "gender = Label(root, text=\"Gender\")\nacco = Label(root, text=\"Accomodation Type\")\n# creating text area\nbooking_list = []\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n# Creating entry\nname_entry = Entry(root, width=50,)\npassport_entry = Entry(root, width=50, )\ncountry_entry = Entry(root, width=50, )",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import gender\n```\n\n```python\n\n\n```\n\n```python\ngender = Label(root, text=\"Gender\")\nacco = Label(root, text=\"Accomodation Type\")\n# creating text area\nbooking_list = []\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n# Creating entry\nname_entry = Entry(root, width=50,)\npassport_entry = Entry(root, width=50, )\ncountry_entry = Entry(root, width=50, )\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "acco",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "acco = Label(root, text=\"Accomodation Type\")\n# creating text area\nbooking_list = []\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n# Creating entry\nname_entry = Entry(root, width=50,)\npassport_entry = Entry(root, width=50, )\ncountry_entry = Entry(root, width=50, )\nfromDate_entry = Entry(root, width=50, )",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import acco\n```\n\n```python\n\n\n```\n\n```python\nacco = Label(root, text=\"Accomodation Type\")\n# creating text area\nbooking_list = []\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n# Creating entry\nname_entry = Entry(root, width=50,)\npassport_entry = Entry(root, width=50, )\ncountry_entry = Entry(root, width=50, )\nfromDate_entry = Entry(root, width=50, )\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "booking_list",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "booking_list = []\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n# Creating entry\nname_entry = Entry(root, width=50,)\npassport_entry = Entry(root, width=50, )\ncountry_entry = Entry(root, width=50, )\nfromDate_entry = Entry(root, width=50, )\ntoDate_entry = Entry(root, width=50,)\nuser_g = StringVar()",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import booking_list\n```\n\n```python\n\n\n```\n\n```python\nbooking_list = []\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n# Creating entry\nname_entry = Entry(root, width=50,)\npassport_entry = Entry(root, width=50, )\ncountry_entry = Entry(root, width=50, )\nfromDate_entry = Entry(root, width=50, )\ntoDate_entry = Entry(root, width=50,)\nuser_g = StringVar()\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "displaydata",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "displaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n# Creating entry\nname_entry = Entry(root, width=50,)\npassport_entry = Entry(root, width=50, )\ncountry_entry = Entry(root, width=50, )\nfromDate_entry = Entry(root, width=50, )\ntoDate_entry = Entry(root, width=50,)\nuser_g = StringVar()\n# creating button",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import displaydata\n```\n\n```python\n\n\n```\n\n```python\ndisplaydata = Listbox(root, width=100)\ndisplaydata.grid(row=5, columnspan=3)\n# Creating entry\nname_entry = Entry(root, width=50,)\npassport_entry = Entry(root, width=50, )\ncountry_entry = Entry(root, width=50, )\nfromDate_entry = Entry(root, width=50, )\ntoDate_entry = Entry(root, width=50,)\nuser_g = StringVar()\n# creating button\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "name_entry",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "name_entry = Entry(root, width=50,)\npassport_entry = Entry(root, width=50, )\ncountry_entry = Entry(root, width=50, )\nfromDate_entry = Entry(root, width=50, )\ntoDate_entry = Entry(root, width=50,)\nuser_g = StringVar()\n# creating button\nbook_now = Button(root, text=\"Book Now\", command=book_now, padx=50)\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import name_entry\n```\n\n```python\n\n\n```\n\n```python\nname_entry = Entry(root, width=50,)\npassport_entry = Entry(root, width=50, )\ncountry_entry = Entry(root, width=50, )\nfromDate_entry = Entry(root, width=50, )\ntoDate_entry = Entry(root, width=50,)\nuser_g = StringVar()\n# creating button\nbook_now = Button(root, text=\"Book Now\", command=book_now, padx=50)\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "passport_entry",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "passport_entry = Entry(root, width=50, )\ncountry_entry = Entry(root, width=50, )\nfromDate_entry = Entry(root, width=50, )\ntoDate_entry = Entry(root, width=50,)\nuser_g = StringVar()\n# creating button\nbook_now = Button(root, text=\"Book Now\", command=book_now, padx=50)\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import passport_entry\n```\n\n```python\n\n\n```\n\n```python\npassport_entry = Entry(root, width=50, )\ncountry_entry = Entry(root, width=50, )\nfromDate_entry = Entry(root, width=50, )\ntoDate_entry = Entry(root, width=50,)\nuser_g = StringVar()\n# creating button\nbook_now = Button(root, text=\"Book Now\", command=book_now, padx=50)\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "country_entry",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "country_entry = Entry(root, width=50, )\nfromDate_entry = Entry(root, width=50, )\ntoDate_entry = Entry(root, width=50,)\nuser_g = StringVar()\n# creating button\nbook_now = Button(root, text=\"Book Now\", command=book_now, padx=50)\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n    row=5, column=3, sticky=W)",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import country_entry\n```\n\n```python\n\n\n```\n\n```python\ncountry_entry = Entry(root, width=50, )\nfromDate_entry = Entry(root, width=50, )\ntoDate_entry = Entry(root, width=50,)\nuser_g = StringVar()\n# creating button\nbook_now = Button(root, text=\"Book Now\", command=book_now, padx=50)\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n    row=5, column=3, sticky=W)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "fromDate_entry",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "fromDate_entry = Entry(root, width=50, )\ntoDate_entry = Entry(root, width=50,)\nuser_g = StringVar()\n# creating button\nbook_now = Button(root, text=\"Book Now\", command=book_now, padx=50)\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n    row=5, column=3, sticky=W)\nview_entry = Button(root, text=\"View All Entries\",",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import fromDate_entry\n```\n\n```python\n\n\n```\n\n```python\nfromDate_entry = Entry(root, width=50, )\ntoDate_entry = Entry(root, width=50,)\nuser_g = StringVar()\n# creating button\nbook_now = Button(root, text=\"Book Now\", command=book_now, padx=50)\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n    row=5, column=3, sticky=W)\nview_entry = Button(root, text=\"View All Entries\",\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "toDate_entry",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "toDate_entry = Entry(root, width=50,)\nuser_g = StringVar()\n# creating button\nbook_now = Button(root, text=\"Book Now\", command=book_now, padx=50)\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n    row=5, column=3, sticky=W)\nview_entry = Button(root, text=\"View All Entries\",\n                    command=view_all_entries).grid(row=5, column=3, sticky=E)",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import toDate_entry\n```\n\n```python\n\n\n```\n\n```python\ntoDate_entry = Entry(root, width=50,)\nuser_g = StringVar()\n# creating button\nbook_now = Button(root, text=\"Book Now\", command=book_now, padx=50)\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n    row=5, column=3, sticky=W)\nview_entry = Button(root, text=\"View All Entries\",\n                    command=view_all_entries).grid(row=5, column=3, sticky=E)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "user_g",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "user_g = StringVar()\n# creating button\nbook_now = Button(root, text=\"Book Now\", command=book_now, padx=50)\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n    row=5, column=3, sticky=W)\nview_entry = Button(root, text=\"View All Entries\",\n                    command=view_all_entries).grid(row=5, column=3, sticky=E)\ndelete_entry = Button(root, text=\"Delete selected entry\",",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import user_g\n```\n\n```python\n\n\n```\n\n```python\nuser_g = StringVar()\n# creating button\nbook_now = Button(root, text=\"Book Now\", command=book_now, padx=50)\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n    row=5, column=3, sticky=W)\nview_entry = Button(root, text=\"View All Entries\",\n                    command=view_all_entries).grid(row=5, column=3, sticky=E)\ndelete_entry = Button(root, text=\"Delete selected entry\",\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "book_now",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "book_now = Button(root, text=\"Book Now\", command=book_now, padx=50)\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n    row=5, column=3, sticky=W)\nview_entry = Button(root, text=\"View All Entries\",\n                    command=view_all_entries).grid(row=5, column=3, sticky=E)\ndelete_entry = Button(root, text=\"Delete selected entry\",\n                      command=lambda displaydata=displaydata: displaydata.delete(ANCHOR)).grid(row=5, column=3, sticky=S)\nquit_application = Button(root, text=\"Quit Application\", command=quite).grid(",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import book_now\n```\n\n```python\n\n\n```\n\n```python\nbook_now = Button(root, text=\"Book Now\", command=book_now, padx=50)\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n    row=5, column=3, sticky=W)\nview_entry = Button(root, text=\"View All Entries\",\n                    command=view_all_entries).grid(row=5, column=3, sticky=E)\ndelete_entry = Button(root, text=\"Delete selected entry\",\n                      command=lambda displaydata=displaydata: displaydata.delete(ANCHOR)).grid(row=5, column=3, sticky=S)\nquit_application = Button(root, text=\"Quit Application\", command=quite).grid(\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "search_entry",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "search_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n    row=5, column=3, sticky=W)\nview_entry = Button(root, text=\"View All Entries\",\n                    command=view_all_entries).grid(row=5, column=3, sticky=E)\ndelete_entry = Button(root, text=\"Delete selected entry\",\n                      command=lambda displaydata=displaydata: displaydata.delete(ANCHOR)).grid(row=5, column=3, sticky=S)\nquit_application = Button(root, text=\"Quit Application\", command=quite).grid(\n    row=6, column=3, sticky=S)",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import search_entry\n```\n\n```python\n\n\n```\n\n```python\nsearch_entry = Button(root, text=\"Search Entry\", command=search_entry).grid(\n    row=5, column=3, sticky=N)\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n    row=5, column=3, sticky=W)\nview_entry = Button(root, text=\"View All Entries\",\n                    command=view_all_entries).grid(row=5, column=3, sticky=E)\ndelete_entry = Button(root, text=\"Delete selected entry\",\n                      command=lambda displaydata=displaydata: displaydata.delete(ANCHOR)).grid(row=5, column=3, sticky=S)\nquit_application = Button(root, text=\"Quit Application\", command=quite).grid(\n    row=6, column=3, sticky=S)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "update_entry",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "update_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n    row=5, column=3, sticky=W)\nview_entry = Button(root, text=\"View All Entries\",\n                    command=view_all_entries).grid(row=5, column=3, sticky=E)\ndelete_entry = Button(root, text=\"Delete selected entry\",\n                      command=lambda displaydata=displaydata: displaydata.delete(ANCHOR)).grid(row=5, column=3, sticky=S)\nquit_application = Button(root, text=\"Quit Application\", command=quite).grid(\n    row=6, column=3, sticky=S)\ngender_entry = IntVar()\n# Radio button",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import update_entry\n```\n\n```python\n\n\n```\n\n```python\nupdate_entry = Button(root, text=\"Update Entry\", command=update_data).grid(\n    row=5, column=3, sticky=W)\nview_entry = Button(root, text=\"View All Entries\",\n                    command=view_all_entries).grid(row=5, column=3, sticky=E)\ndelete_entry = Button(root, text=\"Delete selected entry\",\n                      command=lambda displaydata=displaydata: displaydata.delete(ANCHOR)).grid(row=5, column=3, sticky=S)\nquit_application = Button(root, text=\"Quit Application\", command=quite).grid(\n    row=6, column=3, sticky=S)\ngender_entry = IntVar()\n# Radio button\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "view_entry",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "view_entry = Button(root, text=\"View All Entries\",\n                    command=view_all_entries).grid(row=5, column=3, sticky=E)\ndelete_entry = Button(root, text=\"Delete selected entry\",\n                      command=lambda displaydata=displaydata: displaydata.delete(ANCHOR)).grid(row=5, column=3, sticky=S)\nquit_application = Button(root, text=\"Quit Application\", command=quite).grid(\n    row=6, column=3, sticky=S)\ngender_entry = IntVar()\n# Radio button\nmale = Radiobutton(root, text=\"Male\", variable=gender_entry,\n                   value=1, command=gender_selected)",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import view_entry\n```\n\n```python\n\n\n```\n\n```python\nview_entry = Button(root, text=\"View All Entries\",\n                    command=view_all_entries).grid(row=5, column=3, sticky=E)\ndelete_entry = Button(root, text=\"Delete selected entry\",\n                      command=lambda displaydata=displaydata: displaydata.delete(ANCHOR)).grid(row=5, column=3, sticky=S)\nquit_application = Button(root, text=\"Quit Application\", command=quite).grid(\n    row=6, column=3, sticky=S)\ngender_entry = IntVar()\n# Radio button\nmale = Radiobutton(root, text=\"Male\", variable=gender_entry,\n                   value=1, command=gender_selected)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "delete_entry",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "delete_entry = Button(root, text=\"Delete selected entry\",\n                      command=lambda displaydata=displaydata: displaydata.delete(ANCHOR)).grid(row=5, column=3, sticky=S)\nquit_application = Button(root, text=\"Quit Application\", command=quite).grid(\n    row=6, column=3, sticky=S)\ngender_entry = IntVar()\n# Radio button\nmale = Radiobutton(root, text=\"Male\", variable=gender_entry,\n                   value=1, command=gender_selected)\nfemale = Radiobutton(root, text=\"Female\",\n                     variable=gender_entry, value=2, command=gender_selected)",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import delete_entry\n```\n\n```python\n\n\n```\n\n```python\ndelete_entry = Button(root, text=\"Delete selected entry\",\n                      command=lambda displaydata=displaydata: displaydata.delete(ANCHOR)).grid(row=5, column=3, sticky=S)\nquit_application = Button(root, text=\"Quit Application\", command=quite).grid(\n    row=6, column=3, sticky=S)\ngender_entry = IntVar()\n# Radio button\nmale = Radiobutton(root, text=\"Male\", variable=gender_entry,\n                   value=1, command=gender_selected)\nfemale = Radiobutton(root, text=\"Female\",\n                     variable=gender_entry, value=2, command=gender_selected)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "quit_application",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "quit_application = Button(root, text=\"Quit Application\", command=quite).grid(\n    row=6, column=3, sticky=S)\ngender_entry = IntVar()\n# Radio button\nmale = Radiobutton(root, text=\"Male\", variable=gender_entry,\n                   value=1, command=gender_selected)\nfemale = Radiobutton(root, text=\"Female\",\n                     variable=gender_entry, value=2, command=gender_selected)\nname_entry.grid(row=0, column=1)\ncountry.grid(row=0, column=2)",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import quit_application\n```\n\n```python\n\n\n```\n\n```python\nquit_application = Button(root, text=\"Quit Application\", command=quite).grid(\n    row=6, column=3, sticky=S)\ngender_entry = IntVar()\n# Radio button\nmale = Radiobutton(root, text=\"Male\", variable=gender_entry,\n                   value=1, command=gender_selected)\nfemale = Radiobutton(root, text=\"Female\",\n                     variable=gender_entry, value=2, command=gender_selected)\nname_entry.grid(row=0, column=1)\ncountry.grid(row=0, column=2)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "gender_entry",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "gender_entry = IntVar()\n# Radio button\nmale = Radiobutton(root, text=\"Male\", variable=gender_entry,\n                   value=1, command=gender_selected)\nfemale = Radiobutton(root, text=\"Female\",\n                     variable=gender_entry, value=2, command=gender_selected)\nname_entry.grid(row=0, column=1)\ncountry.grid(row=0, column=2)\ncountry_entry.grid(row=0, column=3)\npassport.grid(row=1, column=0)",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import gender_entry\n```\n\n```python\n\n\n```\n\n```python\ngender_entry = IntVar()\n# Radio button\nmale = Radiobutton(root, text=\"Male\", variable=gender_entry,\n                   value=1, command=gender_selected)\nfemale = Radiobutton(root, text=\"Female\",\n                     variable=gender_entry, value=2, command=gender_selected)\nname_entry.grid(row=0, column=1)\ncountry.grid(row=0, column=2)\ncountry_entry.grid(row=0, column=3)\npassport.grid(row=1, column=0)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "male",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "male = Radiobutton(root, text=\"Male\", variable=gender_entry,\n                   value=1, command=gender_selected)\nfemale = Radiobutton(root, text=\"Female\",\n                     variable=gender_entry, value=2, command=gender_selected)\nname_entry.grid(row=0, column=1)\ncountry.grid(row=0, column=2)\ncountry_entry.grid(row=0, column=3)\npassport.grid(row=1, column=0)\npassport_entry.grid(row=1, column=1)\ngender.grid(row=1, column=2)",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import male\n```\n\n```python\n\n\n```\n\n```python\nmale = Radiobutton(root, text=\"Male\", variable=gender_entry,\n                   value=1, command=gender_selected)\nfemale = Radiobutton(root, text=\"Female\",\n                     variable=gender_entry, value=2, command=gender_selected)\nname_entry.grid(row=0, column=1)\ncountry.grid(row=0, column=2)\ncountry_entry.grid(row=0, column=3)\npassport.grid(row=1, column=0)\npassport_entry.grid(row=1, column=1)\ngender.grid(row=1, column=2)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "female",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "female = Radiobutton(root, text=\"Female\",\n                     variable=gender_entry, value=2, command=gender_selected)\nname_entry.grid(row=0, column=1)\ncountry.grid(row=0, column=2)\ncountry_entry.grid(row=0, column=3)\npassport.grid(row=1, column=0)\npassport_entry.grid(row=1, column=1)\ngender.grid(row=1, column=2)\nmale.grid(row=1, column=3)\nfemale.grid(row=1, column=4)",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import female\n```\n\n```python\n\n\n```\n\n```python\nfemale = Radiobutton(root, text=\"Female\",\n                     variable=gender_entry, value=2, command=gender_selected)\nname_entry.grid(row=0, column=1)\ncountry.grid(row=0, column=2)\ncountry_entry.grid(row=0, column=3)\npassport.grid(row=1, column=0)\npassport_entry.grid(row=1, column=1)\ngender.grid(row=1, column=2)\nmale.grid(row=1, column=3)\nfemale.grid(row=1, column=4)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "OPTIONS",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "OPTIONS = [\n    \"Single Room\",\n    \"Double Room\",\n    \"Male Dorm\",\n    \"Female Dorm\",\n]\nvariable = StringVar(root)\nvariable.set(\"Select Room Type\")  # default value\nfilteredOPTIONS = [\"\", ]\naccomodation_type_list = OptionMenu(",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import OPTIONS\n```\n\n```python\n\n\n```\n\n```python\nOPTIONS = [\n    \"Single Room\",\n    \"Double Room\",\n    \"Male Dorm\",\n    \"Female Dorm\",\n]\nvariable = StringVar(root)\nvariable.set(\"Select Room Type\")  # default value\nfilteredOPTIONS = [\"\", ]\naccomodation_type_list = OptionMenu(\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "variable",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "variable = StringVar(root)\nvariable.set(\"Select Room Type\")  # default value\nfilteredOPTIONS = [\"\", ]\naccomodation_type_list = OptionMenu(\n    root, variable, *filteredOPTIONS).grid(row=3, column=1)\nroot.mainloop()",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import variable\n```\n\n```python\n\n\n```\n\n```python\nvariable = StringVar(root)\nvariable.set(\"Select Room Type\")  # default value\nfilteredOPTIONS = [\"\", ]\naccomodation_type_list = OptionMenu(\n    root, variable, *filteredOPTIONS).grid(row=3, column=1)\nroot.mainloop()\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "filteredOPTIONS",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "filteredOPTIONS = [\"\", ]\naccomodation_type_list = OptionMenu(\n    root, variable, *filteredOPTIONS).grid(row=3, column=1)\nroot.mainloop()",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import filteredOPTIONS\n```\n\n```python\n\n\n```\n\n```python\nfilteredOPTIONS = [\"\", ]\naccomodation_type_list = OptionMenu(\n    root, variable, *filteredOPTIONS).grid(row=3, column=1)\nroot.mainloop()\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "accomodation_type_list",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "accomodation_type_list = OptionMenu(\n    root, variable, *filteredOPTIONS).grid(row=3, column=1)\nroot.mainloop()",
+        "detail": "main",
+        "documentation": {
+            "value": "\n```python\nfrom main import accomodation_type_list\n```\n\n```python\n\n\n```\n\n```python\naccomodation_type_list = OptionMenu(\n    root, variable, *filteredOPTIONS).grid(row=3, column=1)\nroot.mainloop()\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Room",
+        "kind": 6,
+        "importPath": "rooms",
+        "description": "rooms",
+        "peekOfCode": "class Room:\n    def __init__(self, name, roomType, quantity):\n        self.name = name\n        self.roomType = roomType\n        self.quantity = quantity\n    def roomInfo(self):\n        print(\"Room info Name:\" + self.name + \" Type: \" + self.roomType)",
+        "detail": "rooms",
+        "documentation": {
+            "value": "\n```python\nfrom rooms import Room\n```\n\n```python\n\n\n```\n\n```python\nclass Room:\n    def __init__(self, name, roomType, quantity):\n        self.name = name\n        self.roomType = roomType\n        self.quantity = quantity\n    def roomInfo(self):\n        print(\"Room info Name:\" + self.name + \" Type: \" + self.roomType)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "filterRooms",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def filterRooms(gender):\n    newRoomDocs = mydb.get_collection(\n        \"rooms\").find({\"roomType\": {\"$ne\": gender}})\n    return newRoomDocs\n# User clicks male or female\navailableRoomsForBooking = filterRooms(gender)\n# for room in availableRoomsForBooking:\n#     print(room)\n# User sellects a room\n# Get room ID",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import filterRooms\n```\n\n```python\n\n\n```\n\n```python\ndef filterRooms(gender):\n    newRoomDocs = mydb.get_collection(\n        \"rooms\").find({\"roomType\": {\"$ne\": gender}})\n    return newRoomDocs\n# User clicks male or female\navailableRoomsForBooking = filterRooms(gender)\n# for room in availableRoomsForBooking:\n#     print(room)\n# User sellects a room\n# Get room ID\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "isRoomAvailable",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def isRoomAvailable(roomType):\n    roomFound = roomsCollection.find_one(\n        {\"roomType\": roomType})\n    # Check quantity\n    if(roomFound[\"quantity\"] > 0):\n        return True\n    return False\nisAvailable = isRoomAvailable(roomID)\nif(isAvailable):\n    # Room is available and now we do booking and save user info as well",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import isRoomAvailable\n```\n\n```python\n\n\n```\n\n```python\ndef isRoomAvailable(roomType):\n    roomFound = roomsCollection.find_one(\n        {\"roomType\": roomType})\n    # Check quantity\n    if(roomFound[\"quantity\"] > 0):\n        return True\n    return False\nisAvailable = isRoomAvailable(roomID)\nif(isAvailable):\n    # Room is available and now we do booking and save user info as well\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "myclient",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "myclient = pymongo.MongoClient(\"mongodb://localhost/\")\nmydb = myclient[\"roomservices\"]\n# Create room collection\n# mydb.create_collection(\"rooms\")\n# Create uer collection\n# mydb.create_collection(\"users\")\n# Create bookings collection\n# mydb.create_collection(\"bookings\")\nroomsCollection = mydb.get_collection(\"rooms\")\nuserCollection = mydb.get_collection(\"users\")",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import myclient\n```\n\n```python\n\n\n```\n\n```python\nmyclient = pymongo.MongoClient(\"mongodb://localhost/\")\nmydb = myclient[\"roomservices\"]\n# Create room collection\n# mydb.create_collection(\"rooms\")\n# Create uer collection\n# mydb.create_collection(\"users\")\n# Create bookings collection\n# mydb.create_collection(\"bookings\")\nroomsCollection = mydb.get_collection(\"rooms\")\nuserCollection = mydb.get_collection(\"users\")\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "mydb",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "mydb = myclient[\"roomservices\"]\n# Create room collection\n# mydb.create_collection(\"rooms\")\n# Create uer collection\n# mydb.create_collection(\"users\")\n# Create bookings collection\n# mydb.create_collection(\"bookings\")\nroomsCollection = mydb.get_collection(\"rooms\")\nuserCollection = mydb.get_collection(\"users\")\nbookingCollection = mydb.get_collection(\"bookings\")",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import mydb\n```\n\n```python\n\n\n```\n\n```python\nmydb = myclient[\"roomservices\"]\n# Create room collection\n# mydb.create_collection(\"rooms\")\n# Create uer collection\n# mydb.create_collection(\"users\")\n# Create bookings collection\n# mydb.create_collection(\"bookings\")\nroomsCollection = mydb.get_collection(\"rooms\")\nuserCollection = mydb.get_collection(\"users\")\nbookingCollection = mydb.get_collection(\"bookings\")\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "roomsCollection",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "roomsCollection = mydb.get_collection(\"rooms\")\nuserCollection = mydb.get_collection(\"users\")\nbookingCollection = mydb.get_collection(\"bookings\")\nfromDate = \"2020, 10, 15\"\ntoDate = \"2020, 10, 25\"\n# USER\nuser1 = User(\"Habiba\", \"Thailand\", \"BB45ER\", \"FEMALE\")\n# ROOM\nroom1 = Room(\"Male Dorm\", \"MALE\", 4)\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import roomsCollection\n```\n\n```python\n\n\n```\n\n```python\nroomsCollection = mydb.get_collection(\"rooms\")\nuserCollection = mydb.get_collection(\"users\")\nbookingCollection = mydb.get_collection(\"bookings\")\nfromDate = \"2020, 10, 15\"\ntoDate = \"2020, 10, 25\"\n# USER\nuser1 = User(\"Habiba\", \"Thailand\", \"BB45ER\", \"FEMALE\")\n# ROOM\nroom1 = Room(\"Male Dorm\", \"MALE\", 4)\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "userCollection",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "userCollection = mydb.get_collection(\"users\")\nbookingCollection = mydb.get_collection(\"bookings\")\nfromDate = \"2020, 10, 15\"\ntoDate = \"2020, 10, 25\"\n# USER\nuser1 = User(\"Habiba\", \"Thailand\", \"BB45ER\", \"FEMALE\")\n# ROOM\nroom1 = Room(\"Male Dorm\", \"MALE\", 4)\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import userCollection\n```\n\n```python\n\n\n```\n\n```python\nuserCollection = mydb.get_collection(\"users\")\nbookingCollection = mydb.get_collection(\"bookings\")\nfromDate = \"2020, 10, 15\"\ntoDate = \"2020, 10, 25\"\n# USER\nuser1 = User(\"Habiba\", \"Thailand\", \"BB45ER\", \"FEMALE\")\n# ROOM\nroom1 = Room(\"Male Dorm\", \"MALE\", 4)\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "bookingCollection",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "bookingCollection = mydb.get_collection(\"bookings\")\nfromDate = \"2020, 10, 15\"\ntoDate = \"2020, 10, 25\"\n# USER\nuser1 = User(\"Habiba\", \"Thailand\", \"BB45ER\", \"FEMALE\")\n# ROOM\nroom1 = Room(\"Male Dorm\", \"MALE\", 4)\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import bookingCollection\n```\n\n```python\n\n\n```\n\n```python\nbookingCollection = mydb.get_collection(\"bookings\")\nfromDate = \"2020, 10, 15\"\ntoDate = \"2020, 10, 25\"\n# USER\nuser1 = User(\"Habiba\", \"Thailand\", \"BB45ER\", \"FEMALE\")\n# ROOM\nroom1 = Room(\"Male Dorm\", \"MALE\", 4)\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "fromDate",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "fromDate = \"2020, 10, 15\"\ntoDate = \"2020, 10, 25\"\n# USER\nuser1 = User(\"Habiba\", \"Thailand\", \"BB45ER\", \"FEMALE\")\n# ROOM\nroom1 = Room(\"Male Dorm\", \"MALE\", 4)\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)\n# BOOKING",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import fromDate\n```\n\n```python\n\n\n```\n\n```python\nfromDate = \"2020, 10, 15\"\ntoDate = \"2020, 10, 25\"\n# USER\nuser1 = User(\"Habiba\", \"Thailand\", \"BB45ER\", \"FEMALE\")\n# ROOM\nroom1 = Room(\"Male Dorm\", \"MALE\", 4)\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)\n# BOOKING\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "toDate",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "toDate = \"2020, 10, 25\"\n# USER\nuser1 = User(\"Habiba\", \"Thailand\", \"BB45ER\", \"FEMALE\")\n# ROOM\nroom1 = Room(\"Male Dorm\", \"MALE\", 4)\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)\n# BOOKING\nbooking1 = Booking(fromDate, toDate, room1, user1)",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import toDate\n```\n\n```python\n\n\n```\n\n```python\ntoDate = \"2020, 10, 25\"\n# USER\nuser1 = User(\"Habiba\", \"Thailand\", \"BB45ER\", \"FEMALE\")\n# ROOM\nroom1 = Room(\"Male Dorm\", \"MALE\", 4)\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)\n# BOOKING\nbooking1 = Booking(fromDate, toDate, room1, user1)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "user1",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "user1 = User(\"Habiba\", \"Thailand\", \"BB45ER\", \"FEMALE\")\n# ROOM\nroom1 = Room(\"Male Dorm\", \"MALE\", 4)\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)\n# BOOKING\nbooking1 = Booking(fromDate, toDate, room1, user1)\n# roomDb1 = {\"name\": room1.name, \"roomType\": room1.roomType,\n#            \"quantity\": room1.quantity}",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import user1\n```\n\n```python\n\n\n```\n\n```python\nuser1 = User(\"Habiba\", \"Thailand\", \"BB45ER\", \"FEMALE\")\n# ROOM\nroom1 = Room(\"Male Dorm\", \"MALE\", 4)\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)\n# BOOKING\nbooking1 = Booking(fromDate, toDate, room1, user1)\n# roomDb1 = {\"name\": room1.name, \"roomType\": room1.roomType,\n#            \"quantity\": room1.quantity}\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "room1",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "room1 = Room(\"Male Dorm\", \"MALE\", 4)\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)\n# BOOKING\nbooking1 = Booking(fromDate, toDate, room1, user1)\n# roomDb1 = {\"name\": room1.name, \"roomType\": room1.roomType,\n#            \"quantity\": room1.quantity}\n# roomDb2 = {\"name\": room2.name, \"roomType\": room2.roomType,\n#            \"quantity\": room2.quantity}",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import room1\n```\n\n```python\n\n\n```\n\n```python\nroom1 = Room(\"Male Dorm\", \"MALE\", 4)\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)\n# BOOKING\nbooking1 = Booking(fromDate, toDate, room1, user1)\n# roomDb1 = {\"name\": room1.name, \"roomType\": room1.roomType,\n#            \"quantity\": room1.quantity}\n# roomDb2 = {\"name\": room2.name, \"roomType\": room2.roomType,\n#            \"quantity\": room2.quantity}\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "room2",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "room2 = Room(\"Female Dorm\", \"FEMALE\", 4)\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)\n# BOOKING\nbooking1 = Booking(fromDate, toDate, room1, user1)\n# roomDb1 = {\"name\": room1.name, \"roomType\": room1.roomType,\n#            \"quantity\": room1.quantity}\n# roomDb2 = {\"name\": room2.name, \"roomType\": room2.roomType,\n#            \"quantity\": room2.quantity}\n# roomDb3 = {\"name\": room3.name, \"roomType\": room3.roomType,",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import room2\n```\n\n```python\n\n\n```\n\n```python\nroom2 = Room(\"Female Dorm\", \"FEMALE\", 4)\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)\n# BOOKING\nbooking1 = Booking(fromDate, toDate, room1, user1)\n# roomDb1 = {\"name\": room1.name, \"roomType\": room1.roomType,\n#            \"quantity\": room1.quantity}\n# roomDb2 = {\"name\": room2.name, \"roomType\": room2.roomType,\n#            \"quantity\": room2.quantity}\n# roomDb3 = {\"name\": room3.name, \"roomType\": room3.roomType,\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "room3",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "room3 = Room(\"Double Room\", \"DOUBLE\", 1)\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)\n# BOOKING\nbooking1 = Booking(fromDate, toDate, room1, user1)\n# roomDb1 = {\"name\": room1.name, \"roomType\": room1.roomType,\n#            \"quantity\": room1.quantity}\n# roomDb2 = {\"name\": room2.name, \"roomType\": room2.roomType,\n#            \"quantity\": room2.quantity}\n# roomDb3 = {\"name\": room3.name, \"roomType\": room3.roomType,\n#            \"quantity\": room3.quantity}",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import room3\n```\n\n```python\n\n\n```\n\n```python\nroom3 = Room(\"Double Room\", \"DOUBLE\", 1)\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)\n# BOOKING\nbooking1 = Booking(fromDate, toDate, room1, user1)\n# roomDb1 = {\"name\": room1.name, \"roomType\": room1.roomType,\n#            \"quantity\": room1.quantity}\n# roomDb2 = {\"name\": room2.name, \"roomType\": room2.roomType,\n#            \"quantity\": room2.quantity}\n# roomDb3 = {\"name\": room3.name, \"roomType\": room3.roomType,\n#            \"quantity\": room3.quantity}\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "room4",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "room4 = Room(\"Single Room\", \"SINGLE\", 2)\n# BOOKING\nbooking1 = Booking(fromDate, toDate, room1, user1)\n# roomDb1 = {\"name\": room1.name, \"roomType\": room1.roomType,\n#            \"quantity\": room1.quantity}\n# roomDb2 = {\"name\": room2.name, \"roomType\": room2.roomType,\n#            \"quantity\": room2.quantity}\n# roomDb3 = {\"name\": room3.name, \"roomType\": room3.roomType,\n#            \"quantity\": room3.quantity}\n# roomDb4 = {\"name\": room4.name, \"roomType\": room4.roomType,",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import room4\n```\n\n```python\n\n\n```\n\n```python\nroom4 = Room(\"Single Room\", \"SINGLE\", 2)\n# BOOKING\nbooking1 = Booking(fromDate, toDate, room1, user1)\n# roomDb1 = {\"name\": room1.name, \"roomType\": room1.roomType,\n#            \"quantity\": room1.quantity}\n# roomDb2 = {\"name\": room2.name, \"roomType\": room2.roomType,\n#            \"quantity\": room2.quantity}\n# roomDb3 = {\"name\": room3.name, \"roomType\": room3.roomType,\n#            \"quantity\": room3.quantity}\n# roomDb4 = {\"name\": room4.name, \"roomType\": room4.roomType,\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "booking1",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "booking1 = Booking(fromDate, toDate, room1, user1)\n# roomDb1 = {\"name\": room1.name, \"roomType\": room1.roomType,\n#            \"quantity\": room1.quantity}\n# roomDb2 = {\"name\": room2.name, \"roomType\": room2.roomType,\n#            \"quantity\": room2.quantity}\n# roomDb3 = {\"name\": room3.name, \"roomType\": room3.roomType,\n#            \"quantity\": room3.quantity}\n# roomDb4 = {\"name\": room4.name, \"roomType\": room4.roomType,\n#            \"quantity\": room4.quantity}\n# roomdbdat1 = mydb.get_collection(\"rooms\").insert_many(",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import booking1\n```\n\n```python\n\n\n```\n\n```python\nbooking1 = Booking(fromDate, toDate, room1, user1)\n# roomDb1 = {\"name\": room1.name, \"roomType\": room1.roomType,\n#            \"quantity\": room1.quantity}\n# roomDb2 = {\"name\": room2.name, \"roomType\": room2.roomType,\n#            \"quantity\": room2.quantity}\n# roomDb3 = {\"name\": room3.name, \"roomType\": room3.roomType,\n#            \"quantity\": room3.quantity}\n# roomDb4 = {\"name\": room4.name, \"roomType\": room4.roomType,\n#            \"quantity\": room4.quantity}\n# roomdbdat1 = mydb.get_collection(\"rooms\").insert_many(\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "gender",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "gender = \"MALE\"\ndef filterRooms(gender):\n    newRoomDocs = mydb.get_collection(\n        \"rooms\").find({\"roomType\": {\"$ne\": gender}})\n    return newRoomDocs\n# User clicks male or female\navailableRoomsForBooking = filterRooms(gender)\n# for room in availableRoomsForBooking:\n#     print(room)\n# User sellects a room",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import gender\n```\n\n```python\n\n\n```\n\n```python\ngender = \"MALE\"\ndef filterRooms(gender):\n    newRoomDocs = mydb.get_collection(\n        \"rooms\").find({\"roomType\": {\"$ne\": gender}})\n    return newRoomDocs\n# User clicks male or female\navailableRoomsForBooking = filterRooms(gender)\n# for room in availableRoomsForBooking:\n#     print(room)\n# User sellects a room\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "availableRoomsForBooking",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "availableRoomsForBooking = filterRooms(gender)\n# for room in availableRoomsForBooking:\n#     print(room)\n# User sellects a room\n# Get room ID\nroomID = \"5fa92ae8dc88193de298a307\"\n# Verify room availability\ndef isRoomAvailable(roomType):\n    roomFound = roomsCollection.find_one(\n        {\"roomType\": roomType})",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import availableRoomsForBooking\n```\n\n```python\n\n\n```\n\n```python\navailableRoomsForBooking = filterRooms(gender)\n# for room in availableRoomsForBooking:\n#     print(room)\n# User sellects a room\n# Get room ID\nroomID = \"5fa92ae8dc88193de298a307\"\n# Verify room availability\ndef isRoomAvailable(roomType):\n    roomFound = roomsCollection.find_one(\n        {\"roomType\": roomType})\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "roomID",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "roomID = \"5fa92ae8dc88193de298a307\"\n# Verify room availability\ndef isRoomAvailable(roomType):\n    roomFound = roomsCollection.find_one(\n        {\"roomType\": roomType})\n    # Check quantity\n    if(roomFound[\"quantity\"] > 0):\n        return True\n    return False\nisAvailable = isRoomAvailable(roomID)",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import roomID\n```\n\n```python\n\n\n```\n\n```python\nroomID = \"5fa92ae8dc88193de298a307\"\n# Verify room availability\ndef isRoomAvailable(roomType):\n    roomFound = roomsCollection.find_one(\n        {\"roomType\": roomType})\n    # Check quantity\n    if(roomFound[\"quantity\"] > 0):\n        return True\n    return False\nisAvailable = isRoomAvailable(roomID)\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "isAvailable",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "isAvailable = isRoomAvailable(roomID)\nif(isAvailable):\n    # Room is available and now we do booking and save user info as well\n    userInfo = user1.__dict__\n    roomInfo = roomsCollection.find_and_modify(\n        {\"_id\": ObjectId(\"5fa92ae8dc88193de298a307\")}, {\"$inc\": {\"quantity\": -1}})\n    if(roomInfo[\"quantity\"] == 0):\n        roomsCollection.find_and_modify(\n            {\"_id\": ObjectId(\"5fa92ae8dc88193de298a307\")}, {\"$set\": {\"quantity\": 0}})\n    bookingInfo = {\"fromDate\": fromDate, \"toDate\": toDate,",
+        "detail": "test",
+        "documentation": {
+            "value": "\n```python\nfrom test import isAvailable\n```\n\n```python\n\n\n```\n\n```python\nisAvailable = isRoomAvailable(roomID)\nif(isAvailable):\n    # Room is available and now we do booking and save user info as well\n    userInfo = user1.__dict__\n    roomInfo = roomsCollection.find_and_modify(\n        {\"_id\": ObjectId(\"5fa92ae8dc88193de298a307\")}, {\"$inc\": {\"quantity\": -1}})\n    if(roomInfo[\"quantity\"] == 0):\n        roomsCollection.find_and_modify(\n            {\"_id\": ObjectId(\"5fa92ae8dc88193de298a307\")}, {\"$set\": {\"quantity\": 0}})\n    bookingInfo = {\"fromDate\": fromDate, \"toDate\": toDate,\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "user",
+        "description": "user",
+        "peekOfCode": "class User:\n    def __init__(self, name, country, passport, gender):\n        self.name = name\n        self.country = country\n        self.passport = passport\n        self.gender = gender\n    def userInfo(self):\n        print(\"User info \" + self.name +\n              self.country + self.passport + self.gender)",
+        "detail": "user",
+        "documentation": {
+            "value": "\n```python\nfrom user import User\n```\n\n```python\n\n\n```\n\n```python\nclass User:\n    def __init__(self, name, country, passport, gender):\n        self.name = name\n        self.country = country\n        self.passport = passport\n        self.gender = gender\n    def userInfo(self):\n        print(\"User info \" + self.name +\n              self.country + self.passport + self.gender)\n```\n",
+            "supportThemeIcons": false
+        }
+    }
+]
